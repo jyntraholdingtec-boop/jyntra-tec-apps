@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JYNTRA</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0f172a;
+    color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .wrap { max-width: 720px; width: 100%; text-align: center; }
+  h1 { font-size: 2.2rem; margin-bottom: 0.25rem; letter-spacing: 0.05em; }
+  p.subtitle { color: #94a3b8; margin-bottom: 2.5rem; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  a.card {
+    display: block;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 24px 20px;
+    text-decoration: none;
+    color: #f1f5f9;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+  a.card:hover { transform: translateY(-3px); border-color: #38bdf8; }
+  a.card .name { font-size: 1.15rem; font-weight: 600; margin-bottom: 6px; }
+  a.card .desc { font-size: 0.9rem; color: #94a3b8; }
+  footer { margin-top: 3rem; font-size: 0.8rem; color: #64748b; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>JYNTRA</h1>
+    <p class="subtitle">Selecciona una aplicación</p>
+    <div class="grid">
+      <a class="card" href="jyntra-app_v10.html">
+        <div class="name">App principal</div>
+        <div class="desc">Versión 10</div>
+      </a>
+      <a class="card" href="jyntra-profesor_v12.html">
+        <div class="name">Profesor</div>
+        <div class="desc">Versión 12</div>
+      </a>
+      <a class="card" href="jyntra-alumno_v14.html">
+        <div class="name">Alumno</div>
+        <div class="desc">Versión 14</div>
+      </a>
+      <a class="card" href="jyntra-nutricionista_v8.html">
+        <div class="name">Nutricionista</div>
+        <div class="desc">Versión 8</div>
+      </a>
+    </div>
+    <footer>JYNTRA Technologies</footer>
+  </div>
+</body>
+</html>
